@@ -22,7 +22,7 @@
         
         <TextBlock Text="Спасибо за спонсорскую поддержку!" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontFamily="Arial"/>
         <TextBlock x:Name="LabelRacer" Text="Гонщик" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontFamily="Arial"/>
-        <TextBlock Text="Фонд собак" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontFamily="Arial"/>
+        <TextBlock x:Name="LabelOrganizationName" Text="Фонд" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontFamily="Arial"/>
 
         <TextBlock x:Name="LabelCost" Text="$ 0" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50" FontFamily="Arial" FontWeight="Bold"/>
         <Button HorizontalAlignment="Center" VerticalAlignment="Center" Content="Назад" Grid.Row="5" FontSize="18" Background="#b4b4b4" BorderBrush="Black" Width="70" Height="30" Click="Button_Back"/>

@@ -9,19 +9,23 @@ namespace WSRKart
 {
     public partial class SponsorRider : Window
     {
-
+        DataSet data = new DataSet();
         public SponsorRider()
         {
             InitializeComponent();
             SqlConnection connection = new SqlConnection(Constants.connectionString);
             connection.Open();
-            SqlDataAdapter dataAdapter = new SqlDataAdapter($"select [First_Name], [Last_Name], [ID_Racer], [Country_Name]  from Racer inner join Country on Country.ID_Country = Racer.ID_Country",connection);
-            DataSet data = new DataSet();
+            SqlDataAdapter dataAdapter = new SqlDataAdapter($"select concat([First_Name], ' ', [Last_Name], ' - ', dbo.Racer.ID_Racer, ' (',[Country_Name], ')') as 'ForCombobox', " +
+                $"concat([First_Name], ' ', [Last_Name], ' - ', dbo.Racer.ID_Racer, ' (',[Country_Name], ') | ',[Charity_Name]) as 'Value' " +
+                $"from Racer inner join Country on Country.ID_Country = Racer.ID_Country inner join Registration on Registration.ID_Racer = Racer.ID_Racer inner " +
+                $"join Charity on Charity.ID_Сharity = Registration.ID_Charity",connection);
+            
             dataAdapter.Fill(data);
-            for (int i = 0; i < data.Tables[0].Rows.Count; i++)
-            {
-                Racer.Items.Add($"{data.Tables[0].Rows[i][0].ToString()} {data.Tables[0].Rows[i][1].ToString()} - {data.Tables[0].Rows[i][2].ToString()} ({data.Tables[0].Rows[i][3].ToString()})");
-            }
+            
+            Racer.ItemsSource = data.Tables[0].DefaultView;
+            Racer.SelectedValuePath = "Value";
+            Racer.DisplayMemberPath = "ForCombobox";
+            
             connection.Close();
         }
 
@@ -62,7 +66,8 @@ namespace WSRKart
             }
             else
             {
-                ThanksForSupport forSupport = new ThanksForSupport(Racer.SelectedItem.ToString(), LabelCost.Text);
+                DataTable result = (data.Tables[0].AsEnumerable().Where(myRow => myRow.Field<string>("Value") == Racer.SelectedValue.ToString())).CopyToDataTable();
+                ThanksForSupport forSupport = new ThanksForSupport(LabelCost.Text, (data.Tables[0].AsEnumerable().Where(myRow => myRow.Field<string>("Value") == Racer.SelectedValue.ToString())).CopyToDataTable());
                 forSupport.Show();
                 this.Hide();
             }
@@ -89,6 +94,13 @@ namespace WSRKart
         private void Button_Back(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void Racer_ValueChanged(object sender, EventArgs e)
+        {
+            DataTable result = (data.Tables[0].AsEnumerable().Where(myRow => myRow.Field<string>("Value") == Racer.SelectedValue.ToString())).CopyToDataTable();
+            if (result.Rows.Count > 0)
+            LabelOrganizationName.Text = result.Rows[0][1].ToString().Remove(0, result.Rows[0][1].ToString().IndexOf('|')+2);
         }
     }
 }
