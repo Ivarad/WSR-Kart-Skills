@@ -19,9 +19,16 @@ namespace WSRKart
     /// </summary>
     public partial class ThanksForSupport : Window
     {
-        public ThanksForSupport()
+        public ThanksForSupport(string Racer, string Cost)
         {
             InitializeComponent();
+            LabelRacer.Text = Racer;
+            LabelCost.Text = Cost;
+        }
+
+        private void Button_Back(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

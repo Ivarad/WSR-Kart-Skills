@@ -43,8 +43,5 @@
             </Button>
             <TextBlock Text="Вход в систему" FontSize="16" FontFamily="Arial" HorizontalAlignment="Center"/>
         </StackPanel>
-
-
-
     </Grid>
 </Window>

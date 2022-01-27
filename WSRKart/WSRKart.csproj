@@ -64,6 +64,7 @@
     <Compile Include="CharitableOraganizationsList.xaml.cs">
       <DependentUpon>CharitableOraganizationsList.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Constants.cs" />
     <Compile Include="CoordinatorMenu.xaml.cs">
       <DependentUpon>CoordinatorMenu.xaml</DependentUpon>
     </Compile>
