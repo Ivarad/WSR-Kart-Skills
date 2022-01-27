@@ -64,6 +64,9 @@
     <Compile Include="CharitableOraganizationsList.xaml.cs">
       <DependentUpon>CharitableOraganizationsList.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CharityInfoUserControl.xaml.cs">
+      <DependentUpon>CharityInfoUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Constants.cs" />
     <Compile Include="CoordinatorMenu.xaml.cs">
       <DependentUpon>CoordinatorMenu.xaml</DependentUpon>
@@ -95,6 +98,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="CharitableOraganizationsList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CharityInfoUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -171,6 +178,11 @@
     <Resource Include="Icons\Informatsia.png" />
     <Resource Include="Icons\Klyuch.png" />
     <Resource Include="Icons\Shlem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Logos\oxfam-international-logo.png" />
+    <Resource Include="Logos\querstadtein-logo.png" />
+    <Resource Include="Logos\Red-Cross.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -9,15 +9,26 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="70"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="90"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200"/>
-            <ColumnDefinition Width="200"/>
-            <ColumnDefinition Width="200"/>
-            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="400"/>
         </Grid.ColumnDefinitions>
-        <local:Sample Grid.RowSpan="3" Grid.ColumnSpan="4"/>
+        <local:Sample Grid.RowSpan="6" Grid.ColumnSpan="2"/>
+        <TextBlock Text="Подробная информция" Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontFamily="Arial"/>
+        <Button HorizontalAlignment="Left" VerticalAlignment="Center" Content="Назад" Grid.Row="0" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="70" Height="30" Margin="30,0,0,0" Click="Button_Back"/>
+        
+        <Button HorizontalAlignment="Center" VerticalAlignment="Center" Content="Kart Skills 2017" Grid.Row="2" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="250" Height="60" Margin="30,0,0,0" />
+        <Button HorizontalAlignment="Center" VerticalAlignment="Center" Content="Предыдущие результаты" Grid.Row="3" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="250" Height="60" Margin="30,0,0,0" />
+        <Button HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Row="2" Grid.Column="1" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="250" Height="60" Margin="0,0,70,0" Click="Button_ToCharitiesList">
+            <TextBlock TextWrapping="Wrap" Text="Список благотворительных организаций" TextAlignment="Center"/>
+        </Button>
+
+
     </Grid>
 </Window>

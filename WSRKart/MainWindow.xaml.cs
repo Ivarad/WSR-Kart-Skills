@@ -35,7 +35,8 @@ namespace WSRKart
 
         private void Button_To_About(object sender, RoutedEventArgs e)
         {
-
+            DetailedInfromation infromation = new DetailedInfromation();
+            infromation.Show();
         }
 
         private void Button_To_Entry(object sender, RoutedEventArgs e)

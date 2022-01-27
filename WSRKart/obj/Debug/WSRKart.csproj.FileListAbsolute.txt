@@ -34,3 +34,5 @@ C:\Users\radch\source\repos\WSRKart\WSRKart\obj\Debug\RacerCheck.baml
 C:\Users\radch\source\repos\WSRKart\WSRKart\obj\Debug\RacerMenu.baml
 C:\Users\radch\source\repos\WSRKart\WSRKart\obj\Debug\SponsorRacer.baml
 C:\Users\radch\source\repos\WSRKart\WSRKart\obj\Debug\ThanksForSupport.baml
+C:\Users\radch\source\repos\WSRKart\WSRKart\obj\Debug\CharityInfoUserControl.g.cs
+C:\Users\radch\source\repos\WSRKart\WSRKart\obj\Debug\CharityInfoUserControl.baml

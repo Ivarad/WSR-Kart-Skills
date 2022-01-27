@@ -23,5 +23,16 @@ namespace WSRKart
         {
             InitializeComponent();
         }
+
+        private void Button_ToCharitiesList(object sender, RoutedEventArgs e)
+        {
+            CharitableOraganizationsList charities = new CharitableOraganizationsList();
+            charities.Show();
+            this.Close();
+        }
+        private void Button_Back(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

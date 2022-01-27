@@ -9,16 +9,15 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="70"/>
+            <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200"/>
-            <ColumnDefinition Width="200"/>
-            <ColumnDefinition Width="200"/>
-            <ColumnDefinition Width="200"/>
-        </Grid.ColumnDefinitions>
-        <local:Sample Grid.RowSpan="3" Grid.ColumnSpan="4"/>
-
+        <local:Sample Grid.RowSpan="5"/>
+        <Button HorizontalAlignment="Left" VerticalAlignment="Center" Content="Назад" Grid.Row="0" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="70" Height="30" Margin="30,0,0,0" Click="Button_Back"/>
+        <TextBlock Text="Список благотворительных организаций" Grid.Row="1"  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontFamily="Arial"/>
+        <ScrollViewer  Grid.Row="2" Grid.RowSpan="1">
+            <StackPanel x:Name="CharityList"/>
+        </ScrollViewer>
     </Grid>
 </Window>
