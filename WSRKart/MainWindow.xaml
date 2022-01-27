@@ -1,0 +1,50 @@
+﻿<Window x:Class="WSRKart.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WSRKart"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+        <local:Sample Grid.RowSpan="3" Grid.ColumnSpan="4"/>
+        <StackPanel Grid.Row="1" Grid.Column="0" VerticalAlignment="Center">
+            <Button Background="White" Width="121" Click="Button_To_Registration_Racer">
+                <Image Source="C:\Users\radch\source\repos\WSRKart\WSRKart\Icons\Shlem.png"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="100"/>
+            </Button>
+            <TextBlock Text="Регистрация гонщика" FontSize="16" FontFamily="Arial" HorizontalAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1" VerticalAlignment="Center">
+            <Button Background="White" Width="140" Click="Button_To_Registration_Sponsor">
+                <Image Source="C:\Users\radch\source\repos\WSRKart\WSRKart\Icons\Dengi.png"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="139"/>
+            </Button>
+            <TextBlock Text="Регистрация спонсора" FontSize="16" FontFamily="Arial" HorizontalAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="2" VerticalAlignment="Center">
+            <Button Background="White" Width="121" Click="Button_To_About">
+                <Image Source="C:\Users\radch\source\repos\WSRKart\WSRKart\Icons\Informatsia.png"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="100"/>
+            </Button>
+            <TextBlock Text="О событии" FontSize="16" FontFamily="Arial" HorizontalAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="3" VerticalAlignment="Center">
+            <Button Background="White" Width="121" Click="Button_To_Entry">
+                <Image Source="C:\Users\radch\source\repos\WSRKart\WSRKart\Icons\Klyuch.png"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="100"/>
+            </Button>
+            <TextBlock Text="Вход в систему" FontSize="16" FontFamily="Arial" HorizontalAlignment="Center"/>
+        </StackPanel>
+
+
+
+    </Grid>
+</Window>
