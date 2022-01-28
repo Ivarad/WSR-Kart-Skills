@@ -7,6 +7,33 @@
         mc:Ignorable="d"
         Title="MyResults" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="400"/>
+        </Grid.ColumnDefinitions>
+        <local:Sample Grid.RowSpan="7" Grid.ColumnSpan="2"/>
+        <Button HorizontalAlignment="Left" VerticalAlignment="Center" Content="Назад" Grid.Row="0" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="70" Height="30" Margin="30,0,0,0" Click="Button_Back"/>
+        <Button HorizontalAlignment="Right" VerticalAlignment="Center" Content="Logout" Grid.Row="0" Grid.Column="1" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="70" Height="30" Margin="0,0,30,0" Click="Button_Back"/>
+
+
+        <TextBlock Text="Мои результаты" Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontFamily="Arial" />
+        <TextBlock Text="Пол: " Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" FontWeight="Bold" Margin="0,0,110,0" />
+        <TextBlock Text="мужской" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="16" FontFamily="Arial"  Margin="0,0,50,0"/>
+        <TextBlock Text="Возрастная категория: " Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" FontWeight="Bold" />
+        <TextBlock Text="18-29" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" Margin="185,0,0,0"/>
+
+        <DataGrid HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.ColumnSpan="2" Width="700" Height="150">
+        </DataGrid>
         
+        <Button HorizontalAlignment="Center" VerticalAlignment="Center" Content="Показать все результаты" Grid.Row="4" Grid.ColumnSpan="2" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="240" Height="30" Click="Button_Back"/>
+
     </Grid>
 </Window>
