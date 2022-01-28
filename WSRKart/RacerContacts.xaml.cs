@@ -15,18 +15,13 @@ using System.Windows.Shapes;
 namespace WSRKart
 {
     /// <summary>
-    /// Логика взаимодействия для RacerCheck.xaml
+    /// Логика взаимодействия для RacerContacts.xaml
     /// </summary>
-    public partial class RacerCheck : Window
+    public partial class RacerContacts : Window
     {
-        public RacerCheck()
+        public RacerContacts()
         {
             InitializeComponent();
-        }
-
-        private void Button_Back(object sender, RoutedEventArgs e)
-        {
-            this.Close();
         }
     }
 }

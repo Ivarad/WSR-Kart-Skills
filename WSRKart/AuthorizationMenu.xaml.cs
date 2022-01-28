@@ -23,5 +23,15 @@ namespace WSRKart
         {
             InitializeComponent();
         }
+
+        private void Button_Authorization(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Cancel(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

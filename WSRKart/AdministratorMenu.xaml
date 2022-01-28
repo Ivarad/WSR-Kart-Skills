@@ -9,15 +9,34 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="70"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="90"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200"/>
-            <ColumnDefinition Width="200"/>
-            <ColumnDefinition Width="200"/>
-            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="400"/>
         </Grid.ColumnDefinitions>
-        <local:Sample Grid.RowSpan="3" Grid.ColumnSpan="4"/>
+        <local:Sample Grid.RowSpan="7" Grid.ColumnSpan="2"/>
+        <TextBlock Text="Меню гонщика" Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontFamily="Arial"/>
+        <Button HorizontalAlignment="Right" VerticalAlignment="Center" Content="Logout" Grid.Row="0" Grid.Column="1" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="70" Height="30" Margin="0,0,30,0" Click="Button_Back"/>
+
+
+        <Button HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Row="2" Grid.Column="0" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="250" Height="60" Margin="30,0,0,0" Click="Button_ToCharitiesList">
+            <TextBlock TextWrapping="Wrap" Text="Пользователи" TextAlignment="Center"/>
+        </Button>
+        <Button HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Row="3" Grid.Column="0" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="250" Height="60" Margin="30,0,0,0" Click="Button_ToCharitiesList">
+            <TextBlock TextWrapping="Wrap" Text="Благотворительные организации" TextAlignment="Center"/>
+        </Button>
+
+        <Button HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Row="2" Grid.Column="1" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="250" Height="60" Margin="0,0,70,0" Click="Button_ToCharitiesList">
+            <TextBlock TextWrapping="Wrap" Text="Волонтеры" TextAlignment="Center"/>
+        </Button>
+        <Button HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Row="3" Grid.Column="1" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="250" Height="60" Margin="0,0,70,0" Click="Button_ToCharitiesList">
+            <TextBlock TextWrapping="Wrap" Text="Инвентарь" TextAlignment="Center"/>
+        </Button>
     </Grid>
 </Window>
