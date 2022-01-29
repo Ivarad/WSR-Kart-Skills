@@ -28,5 +28,19 @@ namespace WSRKart
         {
             this.Close();
         }
+
+        private void Button_To_Authorization(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            AuthorizationMenu authorization = new AuthorizationMenu();
+            authorization.Show();
+        }
+
+        private void Button_ToRegistration(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            RacerRegistration registration = new RacerRegistration();
+            registration.Show();
+        }
     }
 }

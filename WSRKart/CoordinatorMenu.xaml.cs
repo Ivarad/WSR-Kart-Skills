@@ -23,5 +23,9 @@ namespace WSRKart
         {
             InitializeComponent();
         }
+        private void Button_Logout(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

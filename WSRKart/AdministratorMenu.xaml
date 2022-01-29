@@ -22,7 +22,7 @@
         </Grid.ColumnDefinitions>
         <local:Sample Grid.RowSpan="7" Grid.ColumnSpan="2"/>
         <TextBlock Text="Меню администратора" Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontFamily="Arial"/>
-        <Button HorizontalAlignment="Right" VerticalAlignment="Center" Content="Logout" Grid.Row="0" Grid.Column="1" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="70" Height="30" Margin="0,0,30,0" />
+        <Button HorizontalAlignment="Right" VerticalAlignment="Center" Content="Logout" Grid.Row="0" Grid.Column="1" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="70" Height="30" Margin="0,0,30,0" Click="Button_Logout"/>
 
 
         <Button HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Row="2" Grid.Column="0" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="250" Height="60" Margin="30,0,0,0" >

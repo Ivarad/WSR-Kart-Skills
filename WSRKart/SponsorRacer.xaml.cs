@@ -66,6 +66,11 @@ namespace WSRKart
             }
             else
             {
+                SqlConnection connection = new SqlConnection(Constants.connectionString);
+                connection.Open();
+                SqlCommand command = new SqlCommand($"insert into Sponsorship (SponsorName, Amount) values('{NameSponsor.Text}','{Cost.Text}')",connection);
+                command.ExecuteNonQuery();
+                connection.Close();
                 DataTable result = (data.Tables[0].AsEnumerable().Where(myRow => myRow.Field<string>("Value") == Racer.SelectedValue.ToString())).CopyToDataTable();
                 ThanksForSupport forSupport = new ThanksForSupport(LabelCost.Text, (data.Tables[0].AsEnumerable().Where(myRow => myRow.Field<string>("Value") == Racer.SelectedValue.ToString())).CopyToDataTable());
                 forSupport.Show();
