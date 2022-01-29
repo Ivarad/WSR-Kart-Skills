@@ -27,48 +27,51 @@
                 <RowDefinition Height="35"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="200"/>
-                <ColumnDefinition Width="300"/>
-                <ColumnDefinition Width="300"/>
+                <ColumnDefinition Width="400"/>
+                <ColumnDefinition Width="400"/>
             </Grid.ColumnDefinitions>
 
             <TextBlock Text="Регистрация на гонку" Grid.Row="0" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontFamily="Arial"/>
 
-            <TextBlock Text="Вид гонки " Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" FontFamily="Arial"/>
-
-
-            <TextBlock Text="Пароль: " Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="16" FontFamily="Arial"/>
-            <PasswordBox x:Name="Password" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" Width="160"/>
-
-            <TextBlock Text="Повторите пароль: " Grid.Row="3" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="16" FontFamily="Arial"/>
-            <PasswordBox x:Name="RepeatPassword" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" Width="160"/>
-
-
-            <TextBlock Text="Имя: " Grid.Row="4" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="16" FontFamily="Arial"/>
-            <TextBox x:Name="Name" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" Width="160"/>
-
-            <TextBlock Text="Фамилия: " Grid.Row="5" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="16" FontFamily="Arial"/>
-            <TextBox x:Name="LastName" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" Width="160" MaxLength="16"/>
-
-            <TextBlock Text="Пол: " Grid.Row="6" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="16" FontFamily="Arial"/>
-            <ComboBox x:Name="Gender" Grid.Row="6" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" Width="160"/>
+            <TextBlock Text="Вид гонки " Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" Margin="65,0,0,0"/>
+            <StackPanel  Grid.Row="2" Grid.Column="0" Grid.RowSpan="2" HorizontalAlignment="Left" Margin="30,0,0,0">
+                <CheckBox Content="Заезд 2,5 км ($25)"  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" Margin="0,0,0,0"/>
+                <CheckBox Content="Заезд 4 км ($40)"  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" Margin="0,10,15,0"/>
+                <CheckBox Content="Заезд 6,5 км ($65)"  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" Margin="0,10,0,0"/>
+            </StackPanel>
 
 
 
-            <Image x:Name="LabelOrganizationName" Source="C:\Users\radch\source\repos\WSRKart\WSRKart\Icons\Informatsia.png" Grid.Row="1" Grid.RowSpan="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="70" Height="80" Margin="75,0,0,0"/>
-            <TextBlock Text="Фото файл:" Grid.Row="2" Grid.RowSpan="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" FontFamily="Arial"  Margin="10,15,0,0"/>
-            <TextBox Grid.Row="3" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" FontFamily="Arial" Margin="0,17,0,0" Width="150"/>
-            <Button Grid.Row="3" Grid.Column="2" Content="Просмотр" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="16" FontFamily="Arial" Margin="0,15,40,0" Width="100" Background="#FFEBEBEB"/>
+            <TextBlock Text="Детали спонсорства" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" Margin="50,0,0,0"/>
+            <TextBlock Text="Взнос: " Grid.Row="5" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" Margin="40,0,0,0"/>
+            <ComboBox  Grid.Row="5" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" Width="160" Margin="100,0,0,0"/>
 
-            <TextBlock Text="Дата рождения:" Grid.Row="4" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" FontFamily="Arial" />
-            <TextBox Text="Дата рождения:" Grid.Row="4" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" FontFamily="Arial" Margin="20,0,0,0"/>
-
-            <TextBlock Text="Страна:" Grid.Row="5" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" FontFamily="Arial"  Margin="50,0,0,0"/>
-            <ComboBox  Grid.Row="5" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" FontFamily="Arial" Margin="20,0,0,0" Width="107"/>
+            <TextBlock Text="Пароль: " Grid.Row="6" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" Margin="28,0,0,0"/>
+            <TextBox x:Name="Gender" Grid.Row="6" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" Width="160" Margin="100,0,0,0"/>
 
 
-            <Button Grid.Row="7" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" Content="Отмена" Margin="170,0,0,0" Background="#FFEBEBEB" Height="25" Width="65" Click="Button_Cancel"/>
-            <Button Grid.Row="7" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" Content="Регистрация" Margin="0,0,60,0" Background="#FFEBEBEB" Height="25" Width="100" Click="Button_Pay"/>
+            <TextBlock Text="Варианты комплектов" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" Margin="50,0,0,0"/>
+            <StackPanel Grid.Row="2" Grid.Column="1" Grid.RowSpan="3">
+                <RadioButton GroupName="Kits"  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" FontFamily="Arial">
+                    <TextBlock>Варинат A ($0) Номер пилота +<LineBreak/>  браслет</TextBlock>
+                </RadioButton>
+                <RadioButton GroupName="Kits"  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" FontFamily="Arial">
+                    <TextBlock>Варинат B ($30) Номер пилота +<LineBreak/>  Шлем + Браслет</TextBlock>
+                </RadioButton>
+                <RadioButton GroupName="Kits"  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" FontFamily="Arial">
+                    <TextBlock>Варинат C ($50) Номер пилота +<LineBreak/>  Экипировка + Браслет</TextBlock>
+                </RadioButton>
+            </StackPanel>
+            
+
+
+
+            <TextBlock Text="Регистрационный взнос" Grid.Row="5" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" FontFamily="Arial"  Margin="0,0,0,0"/>
+
+            <TextBlock x:Name="LabelCost" Text="$ 0" Grid.RowSpan="2" Grid.Row="6" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50" FontFamily="Arial"/>
+
+            <Button Grid.Row="7" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" Content="Отмена" Margin="80,0,0,0" Background="#FFEBEBEB" Height="25" Width="65" Click="Button_Cancel"/>
+            <Button Grid.Row="7" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" Content="Регистрация" Margin="0,0,110,0" Background="#FFEBEBEB" Height="25" Width="100" Click="Button_Pay"/>
 
         </Grid>
     </Grid>

@@ -7,6 +7,61 @@
         mc:Ignorable="d"
         Title="KartSkillsInformation" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <local:Sample Grid.RowSpan="3" Grid.ColumnSpan="4"/>
+        <Button HorizontalAlignment="Left" VerticalAlignment="Center" Content="Назад" Grid.Row="0" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="70" Height="30" Margin="30,0,0,0" Click="Button_Back"/>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="400"/>
+                <ColumnDefinition Width="400"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Информация о Kart Skills 2017" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.Row="0" FontSize="18" FontFamily="Arial"/>
+
+            <Button HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" FontSize="18" Background="#b4b4b4" Width="150" BorderBrush="Black"  Click="Button_Back">
+                <TextBlock TextWrapping="Wrap" Foreground="White" TextAlignment="Center" FontSize="16" Margin="10,10,10,10"> Карта трассы (нажмите чтобы увеличить карту)</TextBlock>
+            </Button>
+
+            <ScrollViewer  Grid.Row="1" Grid.Column="1" Grid.RowSpan="2">
+                <StackPanel>
+
+                    <TextBlock Grid.Row="1" Grid.Column="1" Grid.RowSpan="2"  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontFamily="Arial" TextWrapping="Wrap" LineHeight="25" LineStackingStrategy="BlockLineHeight">
+                О Kart Skills 2017
+
+                Kart Skills - гоночный фестиваль, проводимый каждый год в разных частях мира. Может быть три зачета: 2.5 километра, 4 километра и 6.5 километров
+
+                В прошлых годах гоночный фестиваль был проведен в Рио-де-Жанейро, Бразилия (2014); Лейпциг, Германия (2013); Каир, Египет (2012) и Париж, Франция (2011).
+
+                В этом году, Kart Skills очень зрелищен, продет в  Москве, Россия, он должен быть самым большим гоночным фестивалем. Это столица России и самый большой город. Гонщики будут проезжать мимо стен Кремля, великолепных архитектур.
+
+                Этот фестиваль привлек рекордное количество гонщиков со всего мира.  особое внимание будет обращено на участников из Германии и Канады (Немец закончил гонку за 20 минут 4 секунды).
+
+                Атмосфера праздника обещает развлечения для всех зрителей.
+
+                События:
+
+                - Программа "4 километра" начнется у Московской Государственная Думы  в 6 утра.
+
+                - Программа "6 километров" начнется в 7 утра у стен Кремля.
+
+                - Программа "2.5 километра"  начнется в 15 часов рядом с Центральным парком культуры и отдыха имени Горького.
+
+                Спасибо всем волонтерам, которые будут помогать нам проводить фестиваль!
+                    </TextBlock>
+                </StackPanel>
+                
+            </ScrollViewer>
+            
+
+        </Grid>
     </Grid>
 </Window>

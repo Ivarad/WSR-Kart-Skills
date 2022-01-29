@@ -74,17 +74,44 @@
     <Compile Include="DetailedInfromation.xaml.cs">
       <DependentUpon>DetailedInfromation.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Inventory.xaml.cs">
+      <DependentUpon>Inventory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryArrival.xaml.cs">
+      <DependentUpon>InventoryArrival.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="KartSkillsInformation.xaml.cs">
+      <DependentUpon>KartSkillsInformation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyResults.xaml.cs">
+      <DependentUpon>MyResults.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileEdit.xaml.cs">
+      <DependentUpon>ProfileEdit.xaml</DependentUpon>
+    </Compile>
     <Compile Include="RacerCheck.xaml.cs">
       <DependentUpon>RacerCheck.xaml</DependentUpon>
     </Compile>
+    <Compile Include="RacerContacts.xaml.cs">
+      <DependentUpon>RacerContacts.xaml</DependentUpon>
+    </Compile>
     <Compile Include="RacerMenu.xaml.cs">
       <DependentUpon>RacerMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RacerRegistration.xaml.cs">
+      <DependentUpon>RacerRegistration.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RacerRegistrationPartTwo.xaml.cs">
+      <DependentUpon>RacerRegistrationPartTwo.xaml</DependentUpon>
     </Compile>
     <Compile Include="Sample.xaml.cs">
       <DependentUpon>Sample.xaml</DependentUpon>
     </Compile>
     <Compile Include="SponsorRacer.xaml.cs">
       <DependentUpon>SponsorRacer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ThanksForRegistration.xaml.cs">
+      <DependentUpon>ThanksForRegistration.xaml</DependentUpon>
     </Compile>
     <Compile Include="ThanksForSupport.xaml.cs">
       <DependentUpon>ThanksForSupport.xaml</DependentUpon>
@@ -113,6 +140,18 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Inventory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InventoryArrival.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="KartSkillsInformation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -125,11 +164,31 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MyResults.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProfileEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="RacerCheck.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="RacerContacts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="RacerMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RacerRegistration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RacerRegistrationPartTwo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -138,6 +197,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SponsorRacer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ThanksForRegistration.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

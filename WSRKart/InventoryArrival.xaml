@@ -7,6 +7,25 @@
         mc:Ignorable="d"
         Title="InventoryArrival" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="110"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="400"/>
+        </Grid.ColumnDefinitions>
+        <local:Sample Grid.RowSpan="7" Grid.ColumnSpan="2"/>
+
+        <TextBlock Text="Поступление инвентаря" Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontFamily="Arial" />
         
+        <DataGrid HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.ColumnSpan="2" Width="300" Height="150">
+        </DataGrid>
+
+        <Button HorizontalAlignment="Center" VerticalAlignment="Center" Content="Сохранить" Grid.ColumnSpan="2" Grid.Row="3" Grid.Column="0" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="105" Height="30" Click="Button_Back" Margin="0,0,95,0"/>
+        <Button HorizontalAlignment="Center" VerticalAlignment="Center" Content="Отмена" Grid.ColumnSpan="2" Grid.Row="3" Grid.Column="0" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="80" Height="30" Click="Button_Back" Margin="140,0,0,0"/>
     </Grid>
 </Window>
