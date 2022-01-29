@@ -25,7 +25,7 @@
         <DataGrid HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.ColumnSpan="2" Width="300" Height="150">
         </DataGrid>
 
-        <Button HorizontalAlignment="Center" VerticalAlignment="Center" Content="Сохранить" Grid.ColumnSpan="2" Grid.Row="3" Grid.Column="0" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="105" Height="30" Click="Button_Back" Margin="0,0,95,0"/>
-        <Button HorizontalAlignment="Center" VerticalAlignment="Center" Content="Отмена" Grid.ColumnSpan="2" Grid.Row="3" Grid.Column="0" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="80" Height="30" Click="Button_Back" Margin="140,0,0,0"/>
+        <Button HorizontalAlignment="Center" VerticalAlignment="Center" Content="Сохранить" Grid.ColumnSpan="2" Grid.Row="3" Grid.Column="0" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="105" Height="30" Margin="0,0,95,0"/>
+        <Button HorizontalAlignment="Center" VerticalAlignment="Center" Content="Отмена" Grid.ColumnSpan="2" Grid.Row="3" Grid.Column="0" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="80" Height="30" Margin="140,0,0,0"/>
     </Grid>
 </Window>

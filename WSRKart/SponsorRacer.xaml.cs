@@ -36,7 +36,7 @@ namespace WSRKart
 
         private void Button_Pay(object sender, RoutedEventArgs e)
         {
-            if(Name.Text == "")
+            if(NameSponsor.Text == "")
             {
                 MessageBox.Show("Поле имени не должно быть пустым!");
             }

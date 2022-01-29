@@ -23,5 +23,10 @@ namespace WSRKart
         {
             InitializeComponent();
         }
+
+        private void Button_Contacts(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

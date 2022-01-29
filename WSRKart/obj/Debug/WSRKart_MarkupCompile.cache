@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\radch\source\repos\WSRKart\WSRKart\App.xaml
-12-870807250
+21-2112168456
 
-171567721350
+261072771065
 13-1505183044
-AdministratorMenu.xaml;AuthorizationMenu.xaml;CharitableOraganizationsList.xaml;CharityInfoUserControl.xaml;CoordinatorMenu.xaml;DetailedInfromation.xaml;MainWindow.xaml;RacerCheck.xaml;RacerMenu.xaml;Sample.xaml;SponsorRacer.xaml;ThanksForSupport.xaml;
+AdministratorMenu.xaml;AuthorizationMenu.xaml;CharitableOraganizationsList.xaml;CharityInfoUserControl.xaml;CoordinatorMenu.xaml;DetailedInfromation.xaml;Inventory.xaml;InventoryArrival.xaml;KartSkillsInformation.xaml;MainWindow.xaml;MyResults.xaml;ProfileEdit.xaml;RacerCheck.xaml;RacerContacts.xaml;RacerMenu.xaml;RacerRegistration.xaml;RacerRegistrationPartTwo.xaml;Sample.xaml;SponsorRacer.xaml;ThanksForRegistration.xaml;ThanksForSupport.xaml;
 
 False
 

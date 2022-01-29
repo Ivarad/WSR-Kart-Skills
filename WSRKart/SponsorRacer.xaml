@@ -36,7 +36,7 @@
             <TextBlock Text="Благотворительность" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" FontFamily="Arial"/>
 
             <TextBlock Text="Ваше имя: " Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="16" FontFamily="Arial"/>
-            <TextBox x:Name="Name" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" Width="200"/>
+            <TextBox x:Name="NameSponsor" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" Width="200"/>
 
             <TextBlock Text="Гонщик: " Grid.Row="3" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="16" FontFamily="Arial"/>
             <ComboBox Name="Racer" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" Width="200" DropDownClosed="Racer_ValueChanged" />

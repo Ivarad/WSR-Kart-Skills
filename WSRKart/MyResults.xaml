@@ -20,8 +20,8 @@
             <ColumnDefinition Width="400"/>
         </Grid.ColumnDefinitions>
         <local:Sample Grid.RowSpan="7" Grid.ColumnSpan="2"/>
-        <Button HorizontalAlignment="Left" VerticalAlignment="Center" Content="Назад" Grid.Row="0" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="70" Height="30" Margin="30,0,0,0" Click="Button_Back"/>
-        <Button HorizontalAlignment="Right" VerticalAlignment="Center" Content="Logout" Grid.Row="0" Grid.Column="1" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="70" Height="30" Margin="0,0,30,0" Click="Button_Back"/>
+        <Button HorizontalAlignment="Left" VerticalAlignment="Center" Content="Назад" Grid.Row="0" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="70" Height="30" Margin="30,0,0,0" />
+        <Button HorizontalAlignment="Right" VerticalAlignment="Center" Content="Logout" Grid.Row="0" Grid.Column="1" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="70" Height="30" Margin="0,0,30,0" />
 
 
         <TextBlock Text="Мои результаты" Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontFamily="Arial" />
@@ -33,7 +33,7 @@
         <DataGrid HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.ColumnSpan="2" Width="700" Height="150">
         </DataGrid>
         
-        <Button HorizontalAlignment="Center" VerticalAlignment="Center" Content="Показать все результаты" Grid.Row="4" Grid.ColumnSpan="2" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="240" Height="30" Click="Button_Back"/>
+        <Button HorizontalAlignment="Center" VerticalAlignment="Center" Content="Показать все результаты" Grid.Row="4" Grid.ColumnSpan="2" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="240" Height="30"/>
 
     </Grid>
 </Window>

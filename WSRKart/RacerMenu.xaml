@@ -22,23 +22,23 @@
         </Grid.ColumnDefinitions>
         <local:Sample Grid.RowSpan="7" Grid.ColumnSpan="2"/>
         <TextBlock Text="Меню гонщика" Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontFamily="Arial"/>
-        <Button HorizontalAlignment="Right" VerticalAlignment="Center" Content="Logout" Grid.Row="0" Grid.Column="1" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="70" Height="30" Margin="0,0,30,0" Click="Button_Back"/>
+        <Button HorizontalAlignment="Right" VerticalAlignment="Center" Content="Logout" Grid.Row="0" Grid.Column="1" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="70" Height="30" Margin="0,0,30,0" />
 
       
-        <Button HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Row="2" Grid.Column="0" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="250" Height="60" Margin="30,0,0,0" Click="Button_ToCharitiesList">
+        <Button HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Row="2" Grid.Column="0" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="250" Height="60" Margin="30,0,0,0" >
             <TextBlock TextWrapping="Wrap" Text="Регистрация на гонку" TextAlignment="Center"/>
         </Button>
-        <Button HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Row="3" Grid.Column="0" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="250" Height="60" Margin="30,0,0,0" Click="Button_ToCharitiesList">
+        <Button HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Row="3" Grid.Column="0" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="250" Height="60" Margin="30,0,0,0" >
             <TextBlock TextWrapping="Wrap" Text="Редактирвоание профиля" TextAlignment="Center"/>
         </Button>
-        <Button HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Row="4" Grid.Column="0" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="250" Height="60" Margin="30,0,0,0" Click="Button_ToCharitiesList">
+        <Button HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Row="4" Grid.Column="0" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="250" Height="60" Margin="30,0,0,0" Click="Button_Contacts">
             <TextBlock TextWrapping="Wrap" Text="Контакты" TextAlignment="Center"/>
         </Button>
 
-        <Button HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Row="2" Grid.Column="1" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="250" Height="60" Margin="0,0,70,0" Click="Button_ToCharitiesList">
+        <Button HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Row="2" Grid.Column="1" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="250" Height="60" Margin="0,0,70,0" >
             <TextBlock TextWrapping="Wrap" Text="Мои результаты" TextAlignment="Center"/>
         </Button>
-        <Button HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Row="3" Grid.Column="1" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="250" Height="60" Margin="0,0,70,0" Click="Button_ToCharitiesList">
+        <Button HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Row="3" Grid.Column="1" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="250" Height="60" Margin="0,0,70,0" >
             <TextBlock TextWrapping="Wrap" Text="Мой спонсор" TextAlignment="Center"/>
         </Button>
     </Grid>

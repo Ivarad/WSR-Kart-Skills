@@ -41,7 +41,8 @@ namespace WSRKart
 
         private void Button_To_Entry(object sender, RoutedEventArgs e)
         {
-
+            AuthorizationMenu authorization = new AuthorizationMenu();
+            authorization.Show();
         }
     }
 }

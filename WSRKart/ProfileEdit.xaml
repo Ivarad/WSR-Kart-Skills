@@ -13,7 +13,7 @@
             <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
         <local:Sample Grid.RowSpan="3" Grid.ColumnSpan="4"/>
-        <Button HorizontalAlignment="Right" VerticalAlignment="Center" Content="Logout" Grid.Row="0" Grid.Column="1" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="70" Height="30" Margin="0,0,30,0" Click="Button_Back"/>
+        <Button HorizontalAlignment="Right" VerticalAlignment="Center" Content="Logout" Grid.Row="0" Grid.Column="1" FontSize="18" Background="#FFEBEBEB" BorderBrush="Black" Width="70" Height="30" Margin="0,0,30,0"/>
         <Grid Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="50"/>
@@ -45,7 +45,7 @@
 
 
             <TextBlock Text="Имя: " Grid.Row="4" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="16" FontFamily="Arial"/>
-            <TextBox x:Name="Name" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" Width="160"/>
+            <TextBox x:Name="NameUser" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" Width="160"/>
 
             <TextBlock Text="Фамилия: " Grid.Row="5" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="16" FontFamily="Arial"/>
             <TextBox x:Name="LastName" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" Width="160" MaxLength="16"/>
@@ -67,8 +67,8 @@
             <ComboBox  Grid.Row="5" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" FontFamily="Arial" Margin="20,0,0,0" Width="107"/>
 
 
-            <Button Grid.Row="7" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" Content="Отмена" Margin="170,0,0,0" Background="#FFEBEBEB" Height="25" Width="65" Click="Button_Cancel"/>
-            <Button Grid.Row="7" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" Content="Сохранить" Margin="0,0,60,0" Background="#FFEBEBEB" Height="25" Width="100" Click="Button_Pay"/>
+            <Button Grid.Row="7" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" Content="Отмена" Margin="170,0,0,0" Background="#FFEBEBEB" Height="25" Width="65" />
+            <Button Grid.Row="7" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" FontFamily="Arial" Content="Сохранить" Margin="0,0,60,0" Background="#FFEBEBEB" Height="25" Width="100" />
 
         </Grid>
     </Grid>

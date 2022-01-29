@@ -235,7 +235,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Icons\kart-skill-2017-map-2.png" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Icons\Dengi.png" />
     <Resource Include="Icons\Informatsia.png" />
